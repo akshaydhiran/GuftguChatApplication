@@ -1,55 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/ScrollView_Login_Id">
-
-        <RelativeLayout
-            android:layout_gravity="center"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="65dp"
+            <ImageView
+                android:id="@+id/guftgulogo"
+                android:layout_width="150dp"
+                android:layout_marginStart="130dp"
+                android:layout_height="150dp"
+                android:src="@drawable/guftgu_logo"
+                />
 
+            <TextView
+                android:layout_below="@id/guftgulogo"
+                android:layout_marginTop="80dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/login_page_title_Id"
                 android:layout_marginLeft="25dp"
                 android:textStyle="bold"
                 android:layout_marginRight="25dp"
-
                 android:textAlignment="center"
                 android:textSize="48sp"
-                android:text="GUFTGU Login"
-
-                android:textColor="@color/colorPrimaryDark"
-                />
-
+                android:text="Login "
+                android:textColor="@color/colorPrimaryDark" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/login_email_Id"
-                android:layout_below="@+id/login_page_title_Id"
                 android:hint="  Email...."
                 android:cursorVisible="true"
-
-                android:layout_margin="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
                 android:inputType="textEmailAddress"
                 android:background="@drawable/inputs"
                 android:padding="8dp"
-                android:drawableStart="@drawable/email_icon"
-                />
+                android:drawableStart="@drawable/email_icon" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -57,8 +54,9 @@
                 android:id="@+id/login_password_Id"
                 android:layout_below="@+id/login_email_Id"
                 android:hint="  Password...."
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
                 android:inputType="textPassword"
                 android:background="@drawable/inputs"
                 android:padding="8dp"
@@ -90,8 +88,8 @@
                 android:layout_width="223dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/forget_password_link_id"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="29dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="25dp"
                 android:background="@drawable/buttons"
                 android:layout_centerHorizontal="true"
@@ -152,28 +150,17 @@
                 android:layout_marginRight="25dp"
                 android:layout_below="@+id/login_using_id"
                 android:drawableStart="@drawable/phone_icon"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Developed by Akshay "
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="60dp"
                 />
 
-        </RelativeLayout>
-    </ScrollView>
+        </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/ScrollView_Login_Id"
-        >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Developed by Akshay "
-            android:gravity="center"
-            android:textStyle="bold"
-            android:layout_marginBottom="5dp"
-            />
-    </RelativeLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
