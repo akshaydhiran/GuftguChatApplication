@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView_Register_Id"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/register_page_title_Id"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="65dp"
+
+                android:text="Register Here"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+
+                android:textSize="48sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_email_Id"
+                android:layout_below="@+id/register_page_title_Id"
+                android:hint="  Email...."
+                android:layout_margin="25dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/inputs"
+                android:padding="8dp"
+                android:drawableStart="@drawable/email_icon"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_password_Id"
+                android:layout_below="@+id/register_email_Id"
+                android:hint="  Password...."
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:inputType="textPassword"
+                android:background="@drawable/inputs"
+                android:padding="8dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/password_icon"
+                />
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_button_Id"
+                android:padding="8dp"
+                android:text="Create Acount"
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"
+                android:background="@drawable/buttons"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_below="@+id/register_password_Id"
+
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/already_have_account_link_Id"
+                android:layout_marginLeft="25dp"
+                android:textStyle="bold"
+                android:layout_marginRight="25dp"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="Already have an account ?"
+                android:layout_below="@+id/register_button_Id"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed by Akshay"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
